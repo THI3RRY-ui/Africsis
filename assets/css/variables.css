@@ -1,0 +1,55 @@
+/* AFRICSIS Design Tokens — sourced from the official Branding Guide (Phase 4) */
+:root {
+  /* Brand colors */
+  --color-blue: #2b99ce;        /* AFRICSIS Blue — core brand color */
+  --color-blue-dark: #1f7aa8;   /* darker shade for hover states */
+  --color-blue-darker: #145170; /* deep shade for gradients/backgrounds */
+  --color-gold: #e57200;        /* Action Gold/Orange — CTAs and accents only */
+  --color-gold-dark: #c56200;
+  --color-charcoal: #333333;    /* primary text color */
+  --color-white: #ffffff;
+  --color-light-gray: #f4f6f9;  /* secondary background */
+  --color-border: #eaeaea;      /* default input/card border */
+
+  /* Semantic aliases */
+  --color-bg: var(--color-white);
+  --color-bg-alt: var(--color-light-gray);
+  --color-text: var(--color-charcoal);
+  --color-text-muted: #6b7280;
+  --color-text-on-blue: var(--color-white);
+  --color-link: var(--color-blue);
+  --color-focus: var(--color-blue);
+
+  /* Typography */
+  --font-primary: "Montserrat", "Arial", sans-serif;
+  --fs-h1: clamp(2rem, 1.4rem + 2.5vw, 2.75rem);
+  --fs-h2: clamp(1.5rem, 1.2rem + 1.4vw, 1.9rem);
+  --fs-h3: clamp(1.15rem, 1.05rem + 0.5vw, 1.35rem);
+  --fs-body: 1rem;
+  --fs-small: 0.875rem;
+  --lh-body: 1.5;
+
+  /* Spacing scale — unified vertical rhythm (fixes Phase 1 audit finding) */
+  --space-2xs: 0.25rem;
+  --space-xs: 0.5rem;
+  --space-sm: 0.75rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2.5rem;
+  --space-2xl: 4rem;
+  --space-3xl: 6rem;
+
+  --container-max: 1240px;
+  --container-pad: clamp(1.25rem, 4vw, 2.5rem);
+
+  /* Components */
+  --radius: 4px; /* brand spec: sharp, not pill-shaped */
+  --radius-lg: 8px;
+  --shadow-card: 0 2px 4px rgba(0, 0, 0, 0.05);
+  --shadow-card-hover: 0 12px 24px rgba(43, 153, 206, 0.12);
+  --shadow-header: 0 1px 0 rgba(0, 0, 0, 0.06);
+  --transition-fast: 180ms ease;
+  --transition-base: 300ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  --header-h: 84px;
+}

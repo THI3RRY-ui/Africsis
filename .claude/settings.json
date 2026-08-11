@@ -1,0 +1,43 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:africsis.org)",
+      "Bash(cd \"c:\\\\Users\\\\mihth\\\\AFRICSIS\" && mkdir -p assets/css assets/js assets/js/data assets/images programs)",
+      "Bash(start \"\" \"c:\\\\Users\\\\mihth\\\\AFRICSIS\\\\index.html\")",
+      "Bash(npx --yes chromium-cli --help)",
+      "Bash(timeout 180 npx playwright install chromium --with-deps)",
+      "Bash(timeout 180 npx playwright install chromium)",
+      "Bash(npx playwright *)",
+      "Bash(echo \"started with pid $!\")",
+      "Read(//c/Users/mihth/AppData/Local/Temp/claude/c--Users-mihth-AFRICSIS/591e389a-f8f7-48b5-9b04-e158f050b030/scratchpad/**)",
+      "Bash(curl -sv http://localhost:8791/index.html)",
+      "Bash(cat \"/c/Users/mihth/AppData/Local/Temp/claude/c--Users-mihth-AFRICSIS/591e389a-f8f7-48b5-9b04-e158f050b030/scratchpad/http-server.log\" 2>&1)",
+      "Bash(curl -sf http://127.0.0.1:8791/index.html)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" http://127.0.0.1:8791/index.html)",
+      "Bash(mkdir -p shots)",
+      "Bash(node verify.js)",
+      "Bash(ls \"C:\\\\Users\\\\mihth\\\\AppData\\\\Local\\\\ms-playwright\" 2>&1)",
+      "Read(//c/Users/mihth/AppData/Local/ms-playwright/**)",
+      "Bash(find \"C:\\\\Users\\\\mihth\\\\AppData\\\\Local\\\\ms-playwright\\\\chromium-1234\" -iname \"*.exe\" 2>&1)",
+      "Read(//c/Users/mihth/AppData/Local/ms-playwright/chromium-1234/**)",
+      "Bash(node diag.js)",
+      "Bash(node diag2.js)",
+      "Bash(node diag3.js)",
+      "Bash(curl -s http://127.0.0.1:8791/assets/js/nav.js)",
+      "Bash(curl -sI http://127.0.0.1:8791/assets/js/nav.js)",
+      "Bash(curl -s http://127.0.0.1:8791/assets/js/data/events.js)",
+      "Bash(node diag4.js)",
+      "Bash(node diag5.js)",
+      "Bash(xxd)",
+      "Bash(node diag6.js)",
+      "Bash(node diag7.js)",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "WebSearch",
+      "WebFetch(domain:simplemaps.com)",
+      "WebFetch(domain:api.github.com)"
+    ],
+    "additionalDirectories": [
+      "c:\\Users\\mihth\\AFRICSIS\\assets"
+    ]
+  }
+}

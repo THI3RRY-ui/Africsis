@@ -1,0 +1,178 @@
+/* ============ Hero orbital motif ============ */
+/* Echoes the AFRICSIS logo: Africa continent orbited by atomic rings. */
+
+.orbital-hero {
+  position: relative;
+  width: 100%;
+  max-width: 480px;
+  aspect-ratio: 1;
+  margin-inline: auto;
+}
+
+.orbital-hero svg {
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}
+
+.orbit-ring {
+  fill: none;
+  stroke: rgba(255, 255, 255, 0.35);
+  stroke-width: 1.4;
+  transform-origin: center;
+}
+
+.orbit-ring.ring-1 {
+  animation: spin 22s linear infinite;
+}
+
+.orbit-ring.ring-2 {
+  animation: spin-reverse 30s linear infinite;
+}
+
+.orbit-ring.ring-3 {
+  animation: spin 40s linear infinite;
+}
+
+.orbit-node {
+  transform-origin: center;
+}
+
+.orbit-node.node-1 {
+  animation: spin 22s linear infinite;
+}
+
+.orbit-node.node-2 {
+  animation: spin-reverse 30s linear infinite;
+}
+
+.orbit-node.node-3 {
+  animation: spin 40s linear infinite;
+}
+
+.orbit-node circle {
+  fill: var(--color-gold);
+  filter: drop-shadow(0 0 8px rgba(229, 114, 0, 0.7));
+}
+
+.orbit-continent {
+  fill: rgba(255, 255, 255, 0.94);
+  animation: float 6s ease-in-out infinite;
+  transform-origin: center;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin-reverse {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+/* ============ Ambient gradient blobs ============ */
+.blob-field {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.blob {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(60px);
+  opacity: 0.5;
+  animation: drift 18s ease-in-out infinite;
+}
+
+.blob-a {
+  width: 420px;
+  height: 420px;
+  background: var(--color-blue);
+  top: -120px;
+  right: -100px;
+}
+
+.blob-b {
+  width: 320px;
+  height: 320px;
+  background: var(--color-gold);
+  bottom: -100px;
+  left: -80px;
+  animation-delay: -6s;
+}
+
+@keyframes drift {
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+  50% {
+    transform: translate(30px, -20px) scale(1.08);
+  }
+}
+
+/* ============ Fallback reveal utility (used where AOS isn't wired) ============ */
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ============ Count-up numbers ============ */
+.count-up {
+  font-variant-numeric: tabular-nums;
+}
+
+/* ============ Shimmer for loading/skeleton states ============ */
+.skeleton {
+  background: linear-gradient(90deg, var(--color-bg-alt) 25%, #eef2f6 37%, var(--color-bg-alt) 63%);
+  background-size: 400% 100%;
+  animation: shimmer 1.6s ease infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: 100% 0;
+  }
+  100% {
+    background-position: -100% 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
