@@ -7,7 +7,7 @@
  * shows a genuine success message and resets the form, but does not
  * actually send the data anywhere. Point the <form action="..."> at your
  * email/CRM provider (e.g. Mailchimp, Formspree) when one is chosen, and
- * this script will keep working — swap the fake `submitForm()` below for
+ * this script will keep working , swap the fake `submitForm()` below for
  * a real fetch() call to that endpoint.
  */
 (function () {
@@ -78,7 +78,7 @@
       submitForm(form).then(function () {
         if (feedback) {
           feedback.textContent =
-            form.getAttribute("data-success-message") || "Thank you — your submission was received.";
+            form.getAttribute("data-success-message") || "Thank you , your submission was received.";
           feedback.classList.add("is-success");
         }
         form.reset();

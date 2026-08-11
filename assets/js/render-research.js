@@ -1,9 +1,9 @@
 /**
- * Renders publication cards from assets/js/data/publications.js — the
+ * Renders publication cards from assets/js/data/publications.js , the
  * real AFRICSIS publications archive (153 posts, 2013-2026), each with
  * its full article body, hosted locally on this site (this redesign is
  * slated to become the live africsis.org, so publications live here now
- * as real pages — research-article.html?id=... — not outbound links to
+ * as real pages , research-article.html?id=... , not outbound links to
  * the old WordPress site).
  *
  * Handles three contexts on the same script:
@@ -99,7 +99,7 @@
     var recent = pool.slice().sort(sortByDateDesc).slice(0, 3);
     recentEl.innerHTML = recent.length
       ? recent.map(function (pub) { return formatCard(pub, linkPrefix); }).join("")
-      : '<p class="empty-state">No publications yet in this program — check back soon.</p>';
+      : '<p class="empty-state">No publications yet in this program , check back soon.</p>';
   }
 
   // ---- Full Research/Publications library ----

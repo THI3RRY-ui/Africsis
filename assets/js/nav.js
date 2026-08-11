@@ -1,6 +1,6 @@
 /**
  * Header, mobile nav, dropdowns, back-to-top.
- * Safe to include on every page — it no-ops if elements aren't present.
+ * Safe to include on every page , it no-ops if elements aren't present.
  */
 (function () {
   var header = document.querySelector(".site-header");

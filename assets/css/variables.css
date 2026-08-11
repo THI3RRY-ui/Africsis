@@ -1,10 +1,10 @@
-/* AFRICSIS Design Tokens — sourced from the official Branding Guide (Phase 4) */
+/* AFRICSIS Design Tokens , sourced from the official Branding Guide (Phase 4) */
 :root {
   /* Brand colors */
-  --color-blue: #2b99ce;        /* AFRICSIS Blue — core brand color */
+  --color-blue: #2b99ce;        /* AFRICSIS Blue , core brand color */
   --color-blue-dark: #1f7aa8;   /* darker shade for hover states */
   --color-blue-darker: #145170; /* deep shade for gradients/backgrounds */
-  --color-gold: #e57200;        /* Action Gold/Orange — CTAs and accents only */
+  --color-gold: #e57200;        /* Action Gold/Orange , CTAs and accents only */
   --color-gold-dark: #c56200;
   --color-charcoal: #333333;    /* primary text color */
   --color-white: #ffffff;
@@ -29,7 +29,7 @@
   --fs-small: 0.875rem;
   --lh-body: 1.5;
 
-  /* Spacing scale — unified vertical rhythm (fixes Phase 1 audit finding) */
+  /* Spacing scale , unified vertical rhythm (fixes Phase 1 audit finding) */
   --space-2xs: 0.25rem;
   --space-xs: 0.5rem;
   --space-sm: 0.75rem;

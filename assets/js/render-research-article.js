@@ -1,6 +1,6 @@
 /**
  * Populates research-article.html from the ?id= query param.
- * Every publication card across the site links here — the real article
+ * Every publication card across the site links here , the real article
  * content lives on this site now (this redesign is slated to become the
  * live africsis.org), not as an outbound link to the old WordPress site.
  */
@@ -27,7 +27,7 @@
     return;
   }
 
-  document.title = pub.title + " — AFRICSIS";
+  document.title = pub.title + " , AFRICSIS";
 
   if (breadcrumbCurrent) breadcrumbCurrent.textContent = pub.title;
   if (titleEl) titleEl.textContent = pub.title;
@@ -43,7 +43,7 @@
     } else if (pub.summary) {
       bodyEl.innerHTML = "<p>" + pub.summary + "</p>";
     } else {
-      bodyEl.innerHTML = "<p>The full text for this publication is being migrated to the new site — check back soon.</p>";
+      bodyEl.innerHTML = "<p>The full text for this publication is being migrated to the new site , check back soon.</p>";
     }
   }
 

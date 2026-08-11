@@ -1,7 +1,7 @@
 /**
  * Populates event.html from the ?id= query param, including the full
- * event page content — every event card across the site links here, so
- * there is always a real destination — no more dead-end "EXPIRED! /
+ * event page content , every event card across the site links here, so
+ * there is always a real destination , no more dead-end "EXPIRED! /
  * ATTEND" buttons, and the full content lives on this site now rather
  * than linking out to the old WordPress site.
  */
@@ -46,12 +46,12 @@
     ? formatDate(event.date) + " – " + formatDate(event.endDate)
     : formatDate(event.date);
 
-  document.title = event.title + " — AFRICSIS";
+  document.title = event.title + " , AFRICSIS";
   if (breadcrumbCurrent) breadcrumbCurrent.textContent = event.title;
 
   var bodyHtml = event.body
     ? event.body
-    : "<p>" + (event.summary || "Details for this event are being migrated to the new site — check back soon.") + "</p>";
+    : "<p>" + (event.summary || "Details for this event are being migrated to the new site , check back soon.") + "</p>";
 
   root.innerHTML =
     '<span class="badge ' +

@@ -342,7 +342,7 @@
 
 /* ============ Partners carousel ============ */
 /* Audit fix: previous controls were featureless blue squares with no
-   affordance — these use a clear arrow icon and are vertically centered. */
+   affordance , these use a clear arrow icon and are vertically centered. */
 .partners-carousel {
   position: relative;
   padding-inline: 3.5rem;
@@ -747,7 +747,7 @@
 }
 
 /* ============ Article body (rendered publication content) ============ */
-/* Content comes from scraped article HTML — restore list markers and
+/* Content comes from scraped article HTML , restore list markers and
    spacing that the site-wide reset (ul/ol { list-style: none; padding: 0 })
    deliberately strips for nav/UI lists, since real prose needs them. */
 .article-body {

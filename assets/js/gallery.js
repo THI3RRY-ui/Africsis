@@ -1,7 +1,7 @@
 /**
  * Gallery filtering (Photos/Videos/All) and a lightweight lightbox.
  * All media are placeholders (.ph-media divs) until real photography
- * is supplied — swap the markup in gallery.html, this script doesn't
+ * is supplied , swap the markup in gallery.html, this script doesn't
  * need to change.
  */
 (function () {

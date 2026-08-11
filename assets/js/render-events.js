@@ -1,13 +1,13 @@
 /**
- * Renders event cards from assets/js/data/events.js — the real AFRICSIS
+ * Renders event cards from assets/js/data/events.js , the real AFRICSIS
  * capacity building archive (12 events, Aug 2017 - Dec 2022), each with
  * full event page content, hosted locally on this site (this redesign is
  * slated to become the live africsis.org, so events live here as real
- * pages — event.html?id=... — not outbound links to the old WordPress
+ * pages , event.html?id=... , not outbound links to the old WordPress
  * site).
  *
  * Upcoming/Past status is computed live against the viewer's actual
- * clock, not hardcoded — every event in the current archive happens to
+ * clock, not hardcoded , every event in the current archive happens to
  * be in the past, but a newly added future-dated event would correctly
  * surface as "Upcoming" with no code changes.
  *
@@ -19,7 +19,7 @@
  *                            Upcoming / Past / All tabs.
  *
  * Every card links to event.html?id=... which always resolves to real
- * content — audit fix for the old "EXPIRED! / ATTEND" dead-link buttons.
+ * content , audit fix for the old "EXPIRED! / ATTEND" dead-link buttons.
  */
 (function () {
   var DATA = window.AFRICSIS_EVENTS || [];
@@ -94,7 +94,7 @@
   // ---- Homepage / program pages: next 3 upcoming events, falling back ----
   // to the 3 most recent past ones if nothing is genuinely upcoming.
   // Program pages add data-program-filter="<program-id>" to scope results.
-  // formatCard() links to "event.html?id=..." — program pages pass
+  // formatCard() links to "event.html?id=..." , program pages pass
   // data-link-prefix="../" so those links still resolve from a subfolder.
   var recentEl = document.querySelector("[data-recent-events]");
   if (recentEl) {
@@ -112,7 +112,7 @@
 
     recentEl.innerHTML = picked.length
       ? picked.map(function (evt) { return formatCard(evt, linkPrefix); }).join("")
-      : '<p class="empty-state">No events yet in this program — check the full calendar.</p>';
+      : '<p class="empty-state">No events yet in this program , check the full calendar.</p>';
   }
 
   // ---- Full events page ----
